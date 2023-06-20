@@ -98,7 +98,7 @@ class PostController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Post not found'
-            ], 400);
+            ], 404);
         }
 
         if ($post->delete()) {
